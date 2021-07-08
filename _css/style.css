@@ -1,1 +1,111 @@
-﻿//
+﻿/*Declaração de variáveis em CSS3*/
+:root{
+	--vermelho: #E50914;
+	--preta: #141414;
+}
+
+/*Resete CSS*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* O limite de todas as coisas será a borda da box (caixa)*/
+}
+
+/*Elementos base*/
+
+body{
+	background-color:var(--preta) ;
+	font-family: 'Arial', Times, serif;
+	color: white;
+}
+
+header .container{
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo{
+	padding-left: 5px;
+	color: var(--vermelho);
+	font-family: 'Arial Black',Times;
+	font-size: 40px;
+}
+
+header nav a {
+		text-decoration: none;
+		color: #AAA;
+		padding-right: 10px;
+}
+
+header nav a:hover{
+	color: #de6b00;
+}
+
+/*Filme principal*/
+
+.filme_principal{
+	font-size: 16px;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../_img/capa-inicio.jpg');
+	height: 400px;
+	background-size: cover; /*Ajusta uma imagem ao tamanho da div(caixa) a qual pretence.*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.filme_principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.filme_principal .titulo{
+	margin-top: 15%;
+	font-size: 40px;
+	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucila Grande','Lucila Sans',Arial,sans-serif;
+
+}
+
+.botao{
+	background-color: rgba(0, 0, 0, .50);
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	margin-right: 15px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.botao:hover{
+	background-color: white;
+	color: black;
+	transform: scale(1.1);
+	border-radius: 5px;
+	background: linear-gradient(rgba(226,32,33,.50),rgba(252,207,2,.50)100%);
+}
+
+.botao i{
+	margin-right: 8px;
+}
+
+.botao i:hover{
+	color: red;
+}
+
+.container{
+	margin-left: 30px;
+}
+.filme_principal .container{
+	width: 70%;
+}
+.box-filme{
+	height: 100%;
+	width: 100%;
+}
+
+.carrosel-filmes{
+	margin-top: 5px;
+}
